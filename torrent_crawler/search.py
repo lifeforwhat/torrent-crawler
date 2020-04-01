@@ -43,7 +43,7 @@ class Search:
         if self.search_query.quality in ['all', '720'] and torrents.web720:
             available_torrents['720p.WEB'] = torrents.web720
         if self.search_query.quality in ['all', '1080'] and torrents.web1080:
-            available_torrents['1080p.WEB'] = torrents.br1080
+            available_torrents['1080p.WEB'] = torrents.web1080
         return available_torrents
 
     MoviesList = List[Movie]
